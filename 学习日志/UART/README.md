@@ -71,3 +71,15 @@ TEST_PASS: QWER burst was echoed correctly
 - 文本编码：建议 UTF-8 或 ASCII
 
 发送 `QWER`，接收区应返回 `QWER`。开发板上的 LED 会根据最近接收字节的低 4 位变化。
+
+## 后续课程：uart_command_ack
+
+`uart_command_ack/` 是在回环项目基础上继续完成的串口命令控制项目。
+
+- 发送 `0`：关闭所有 LED，并回复 `LED OFF`
+- 发送 `1`：点亮 LED0，并回复 `LED GREEN`
+- 发送 `2`：点亮 LED1，并回复 `LED YELLOW`
+- 发送 `3`：点亮 LED2，并回复 `LED RED`
+- 发送其他字符：保持 LED 状态，并回复 `ERROR`
+
+该项目新增命令译码器、应答字符串发送状态机和 4 字节应答 FIFO。
