@@ -1,0 +1,30 @@
+# Vivado temporary and generated files
+.Xil/
+.jobs/
+synth_1/
+vivado_project/*.cache/
+vivado_project/*.gen/
+vivado_project/*.hw/
+vivado_project/*.ip_user_files/
+vivado_project/*.runs/
+vivado_project/*.sim/
+vivado_project/*.srcs/
+
+# Generated simulation, implementation, and report files
+*.jou
+*.log
+*.str
+*.wdb
+*.pb
+*.vds
+*.dcp
+*.rpt
+*.vvp
+transcript*
+
+# Generated FPGA programming files
+*.bit
+*.bin
+*.mcs
+*.prm
+
